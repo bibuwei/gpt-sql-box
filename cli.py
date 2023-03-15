@@ -21,7 +21,7 @@ if __name__ == '__main__':
     final_prompt = f'Given an input question, respond with syntactically correct PostgreSQL. Be creative but the SQL must be correct, not nessesary to use all tables.\n\n{sql_schema}\n\nInstructions: {prompt}\n\nSQL:\n'
 
     gpt_response = openai.Completion.create(
-        engine="text-davinci-003",
+        engine="text-chat-davinci-002-20221122",
         prompt=final_prompt,
         temperature=float(query_temperture),
         max_tokens=200,

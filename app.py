@@ -15,7 +15,7 @@ load_dotenv()
 OPENAI_ENGINE = os.getenv('OPENAI_ENGINE') or 'text-davinci-003'
 TEMPLATE_DIR = os.path.abspath('./tpl')
 PROMPT_DIR = os.path.abspath('./prompts')
-APP_PORT = os.getenv('APP_PORT') or 5000
+APP_PORT = os.getenv('APP_PORT') or 8089
 DATABASE_URL = os.getenv('DATABASE_URL')
 if not DATABASE_URL:
     print('Please set DATABASE_URL in .env file.')
